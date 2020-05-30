@@ -2,4 +2,4 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/courses/web-
 
 A classic electronic calculator created with HTML, CSS and JavaScript.
 
-[View in Browser](https://luizgrether.github.io/javascript-calculator/)
+[View in Browser](https://luizgrether.github.io/js-calculator/)
