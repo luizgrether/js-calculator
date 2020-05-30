@@ -1,0 +1,215 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(91, 104, 101);
+}
+
+.container {
+  transform: scale(1.2);
+  width: 280px;
+  height: 440px;
+  border-radius: 18px;
+  box-shadow: inset 0px 0px 8px 10px rgb(34, 34, 34),
+    0px 10px 10px 1px rgb(27, 29, 28);
+  background-image: linear-gradient(to right, #414141, #363636);
+  left: 50%;
+  top: 50%;
+  margin-left: -140px;
+  margin-top: -220px;
+  position: absolute;
+}
+
+.display {
+  box-sizing: border-box;
+  padding-right: 5px;
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 230px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 55px;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 2px black;
+  color: #181f1b;
+  font-size: 54px;
+  font-family: "digital-7";
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #6fa387,
+    rgb(176, 194, 184),
+    #6fa387,
+    #6fa387
+  );
+}
+
+.superior {
+  width: 230px;
+  left: 50%;
+  top: 50%;
+  margin-left: -115px;
+  margin-top: -218px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.superior p {
+  font-family: "Six Caps", sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  border: solid 1px rgb(165, 165, 165);
+  border-radius: 4px;
+  letter-spacing: 0.1rem;
+  color: rgb(187, 187, 187);
+  padding: 3px;
+}
+
+.solar-panel {
+  display: flex;
+  width: 80px;
+  height: 25px;
+  box-shadow: inset;
+  background-color: #41281f;
+  box-shadow: inset 1px 1px 1px 1px black;
+  align-items: flex-end;
+  border-radius: 4px;
+}
+
+.solar-panel-slot {
+  width: 20px;
+  height: 23px;
+  border-right: solid 1px rgb(75, 48, 39);
+}
+
+.buttons-container {
+  display: grid;
+  max-width: 83%;
+  height: 280px;
+  margin: 0 auto;
+  margin-top: 18px;
+  gap: 15px 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "all-clear delete percentage division"
+    "seven eight nine multiplication"
+    "four five six subtraction"
+    "one two three addition"
+    "zero zero decimal equals";
+}
+
+.buttons-container button {
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    to right,
+    rgb(173, 173, 173),
+    rgb(99, 99, 99)
+  );
+  border-radius: 8px;
+  box-shadow: inset 0px 1px 2px 0px white, 0px 0px 4px 1px rgb(14, 14, 14);
+  outline: none;
+}
+
+.buttons-container button.button-onclick {
+  box-shadow: inset 0px 0px 10px 0px rgb(94, 94, 94), 0px 0px 1px 1px black;
+}
+
+.buttons-container button.orange-button {
+  background-image: linear-gradient(#f38b03, #e68404);
+}
+
+.buttons-container button.orange-button-onclick {
+  box-shadow: inset 0px 0px 10px 0px #f38b03, 0px 0px 1px 1px black;
+}
+
+.all-clear {
+  grid-area: all-clear;
+}
+
+#delete {
+  grid-area: delete;
+}
+
+#percentage {
+  grid-area: percentage;
+}
+
+#division {
+  grid-area: division;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+#multiplication {
+  grid-area: multiplication;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+#subtraction {
+  grid-area: subtraction;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+#addition {
+  grid-area: addition;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.decimal {
+  grid-area: decimal;
+  padding-bottom: 10px;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+@font-face {
+  font-family: "digital-7";
+  src: url(fonts/digital.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
